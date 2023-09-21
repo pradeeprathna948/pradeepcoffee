@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Lato&family=Merienda:wght@400;700&family=Noto+Sans+Vithkuqi&family=REM:wght@300;400;500&family=Roboto&display=swap');
+:root {
+    --main-color: #be9c79;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --border: .2rem solid var(--black);
+}
+
+
+* {
+    font-family:'Merienda', cursive;;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+section {
+    padding: 1rem 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.navBar {
+    display: flex;
+    background-color: var(--white);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* top: 0; */
+    /* position: fixed; */
+}
+
+.logo {
+    height: 100%;
+    width: 30%;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 60%;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.navLinks li {
+    list-style-type: none;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.home-bg {
+    background: linear-gradient(90deg, var(--white), transparent 70%), url(./images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+}
+
+.home-bg .home {
+    min-height: 44rem;
+    display: flex;
+    align-items: center;
+    /* background-color: brown; */
+    /* padding-left: 10%; */
+}
+
+.home-bg .home .content {
+    width: 40rem;
+    text-align: center;
+    /* background-color: aquamarine; */
+    /* margin-right: 100px; */
+}
+
+.home-bg .home .content h3 {
+    padding: 1rem;
+    font-size: 3.5rem;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 12px 30px;
+    background-color: var(--main-color);
+    text-decoration: none;
+    color: var(--white);
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    /* background-color: aqua; */
+}
+
+.about .image {
+    flex: 1 1 20rem;
+}
+
+.about .image img {
+    width: 100%;
+}
+
+.about .content {
+    flex: 1 1 40rem;
+}
+
+.about .content h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+    font-family: 'merienda One', cursive;
+    padding-bottom: 1rem;
+}
+
+.about .content .btn a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+.about .content p {
+    line-height: 2;
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.facility {
+    text-align: center;
+    /* margin-top: 4rem; */
+}
+
+.facility .heading h3 {
+    font-size: 2.5rem;
+    padding: 1.5rem 0 1.5rem;
+}
+
+.facility .boxContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+    /* background-color: aqua; */
+    /* width: 70%; */
+    /* margin-left: 15%; */
+}
+
+.facility .boxContainer .box {
+    text-align: center;
+}
+
+.facility .boxContainer .box img {
+    height: 7rem;
+}
+
+.menu {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.menu .heading {
+    font-size: 2.2rem;
+}
+
+.menu .heading h3 {
+    padding: 1.5rem 0 1.5rem;
+}
+
+.menu .boxContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    justify-content: space-evenly;
+    /* background-color: aquamarine; */
+    /* width: 70%; */
+    /* margin-left: 15%; */
+}
+
+.menu .boxContainer .box {
+    text-align: center;
+    padding: 15px;
+}
+
+.menu .boxContainer .box img {
+    height: 100%;
+    padding: 15px;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.gallery .imageContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    gap: 2rem;
+    /* object-fit: cover; */
+    justify-content: center;
+}
+
+.gallery .imageContainer img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.gallery .heading img {
+    padding: 1rem 0 1rem;
+}
+
+.gallery .heading h3 {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.team {
+    text-align: center;
+}
+
+.team .heading h3 {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.team .imageContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    gap: 2rem;
+    /* object-fit: cover; */
+    justify-content: center;
+    /* background-color: aqua;  */
+    /* padding: 2rem 0 .5rem;     */
+}
+
+.team .imageContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact {
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+    flex-direction: column;
+    /* background-color: aqua; */
+}
+
+.contact h3 {
+    font-size: 2.5rem;
+}
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* border: 2px solid black; */
+}
+
+.contact .row .image {
+    flex: 1 1 200px;
+}
+
+.contact .row .image img {
+    width: 100%;
+}
+
+.contact .row form {
+    flex: 1 1 250px;
+    border: var(--border);
+    padding: 1rem;
+    text-align: center;
+}
+
+.contact .row form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+.contact .row form .box {
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    border: var(--border);
+    margin: 1rem 0;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* background-color: aquamarine; */
+    justify-content: space-around;
+    /* align-items: flex-start; */
+    text-align: center;
+}
+
+.footer .box-container i {
+    padding: 20px 20px;
+    border-radius: 50%;
+    background-color: #be9c79;
+    text-align: center;
+    font-size: 30px;
+    color: var(--white);
+
+}
+
+.footer .box-container h3 {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer .box-container p {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.credit {
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.line {
+    border-bottom: 1px solid black;
+    height: 10px;
+    font-size: 25px;
+}
